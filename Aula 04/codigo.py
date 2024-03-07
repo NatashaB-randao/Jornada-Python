@@ -7,6 +7,7 @@
 # a cada mensagem que você envia (aparece para todo mundo)
     # Nome: Texto da Mensagem
 
+# flet -> framework do Python (desenvolvimento web e app)
 
 # produto = {
 #     "nome": "iphone",
@@ -18,7 +19,7 @@
 
 import flet as ft
 
-def main(pagina):
+def main(pagina):                       # criar a função principal 
     texto = ft.Text("Hashzap")
 
     chat = ft.Column()
@@ -84,6 +85,6 @@ def main(pagina):
     pagina.add(texto)
     pagina.add(botao_iniciar)
 
-ft.app(target=main, view=ft.WEB_BROWSER, port=8000)
+ft.app(target=main, view=ft.WEB_BROWSER, port=8000)         # criar o app chamando a função principal
 
 # deploy
